@@ -67,17 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    player.on("adsready", function () {
-      if (midrollRequested) {
-        console.log("Ads ready - midroll");
-      } else {
-        console.log("Ads ready - preroll");
-        player.src(
-          "https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8"
-        );
-      }
-    });
-
     player.on("aderror", function () {
       console.log("Ads aderror");
       player.play();
