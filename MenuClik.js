@@ -47,12 +47,6 @@
  }
  }
  });
- $(document).on("mousewheel", function(e) {
- var scroll = $(window).scrollTop();
- if (($("body").hasClass("js-menu-active")) && ($("#megabillboard").length) && (scroll < height_billboard)) {
- close_menu();
- }
- });
  $(document).on("touchmove", function() {
  $(document).trigger("mousewheel");
  });
